@@ -1,4 +1,12 @@
-jQuery.mobile.orientationChangeEnabled = true;
+jQuery.mobile.orientationChangeEnabled = false;
+
+$(window).bind("resize", function(){
+    var orientation = window.orientation;
+    var new_orientation = (orientation) ? 0 : 180 + orientation;
+    $('body').css({
+        "-webkit-transform": "rotate(" + new_orientation + "deg)"
+    });
+});
 
 /*function contentHeight() {
   var screen = $.mobile.getScreenHeight(),
