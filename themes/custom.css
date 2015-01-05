@@ -1,0 +1,98 @@
+html {font-size: 100%;}
+body, input, select, textarea, button, .ui-btn {font-size: 1em; line-height: 1.3; font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;}
+
+body{background:#222222 url(images/bg.jpg) repeat-x 0 0;}
+/*body.page_star_fm{
+background-image:url(images/bg_star_fm.jpg);background-repeat:no-repeat; background-position: center center; background-size:100% 100%; 
+background-color: #02a2d9;
+background: -moz-linear-gradient(top,  #02a2d9 1%, #22458e 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#02a2d9), color-stop(100%,#22458e));
+background: -webkit-linear-gradient(top,  #02a2d9 1%,#22458e 100%);
+background: -o-linear-gradient(top,  #02a2d9 1%,#22458e 100%);
+background: -ms-linear-gradient(top,  #02a2d9 1%,#22458e 100%);
+background: linear-gradient(to bottom,  #02a2d9 1%,#22458e 100%);
+}*/
+
+.starfm_bg{background-image:url(images/bg_star_fm.jpg);background-repeat:no-repeat; background-position: center center; background-size:100% 100%; height:100%;}
+.alquran_bg{background-image:url(images/bg_alquran_fm.jpg);background-repeat:no-repeat; background-position: center center; background-size:100% 100%; height:100%;
+}
+.abudhabi_bg{background-image:url(images/bg_abudhabi_fm.jpg); background-repeat:no-repeat; background-position: center center; background-size:100% 100%; height:100%;}
+.classic_bg{background-image:url(images/bg_classic_fm.jpg); background-repeat:no-repeat; background-position: center center; background-size:100% 100%; height:100%;}
+.emirate_bg{background-image:url(images/bg_emirate_fm.jpg); background-repeat:no-repeat; background-position: center center; background-size:100% 100%; height:100%;}
+.radiomirchi_bg{background-image:url(images/bg_radio_m_fm.jpg); background-repeat:no-repeat; background-position: center center; background-size:100% 100%; height:100%;}
+
+.ui-content{background-repeat:no-repeat; background-position: center center; background-size:100% 100%; height:100%; padding:0px !important;}
+/*
+.page_abudhabi_fm{background:#e0596a url(images/bg_abudhabi_fm.jpg) no-repeat center center; background-size:100% 100%;}
+.page_alquran_fm{background:#2cdfaa url(images/bg_alquran_fm.jpg) no-repeat center center; background-size:100% 100%;}
+.page_classic_fm{background:#c45cf9 url(images/bg_classic_fm.jpg) no-repeat center center; background-size:100% 100%;}
+.page_emirate_fm{background:#f8a321 url(images/bg_emirate_fm.jpg) no-repeat center center; background-size:100% 100%;}
+.page_radiomirchi_fm{background:#fed834 url(images/bg_radio_m_fm.jpg) no-repeat center center; background-size:100% 100%;}
+*/
+.ui-bar-a, .ui-header, .ui-footer, .ui-content{border: none !important; background-color:transparent !important; text-shadow:none !important; box-shadow:none !important;}
+.ui-page-theme-a .ui-btn, html .ui-bar-a .ui-btn, html .ui-body-a .ui-btn, html body .ui-group-theme-a .ui-btn, html head + body .ui-btn.ui-btn-a, .ui-page-theme-a .ui-btn:visited, html .ui-bar-a .ui-btn:visited, html .ui-body-a .ui-btn:visited, html body .ui-group-theme-a .ui-btn:visited, html head + body .ui-btn.ui-btn-a:visited{border: none !important; background-color:transparent !important; text-shadow:none !important; box-shadow:none !important;}
+
+body .ui-btn.ui-btn-a:active{opacity:0.5;}
+
+#grid .ui-btn img{ width:100%;}
+#grid .ui-bar{ padding:0px;}
+.container{max-width:600px; margin: 0 auto !important; position:relative;}
+#grid .ui-btn{padding: 0.7em 0.7em;}
+
+.ui-footer-fixed, .footer{min-height:55px;background-color: #252629 !important;}
+
+/*.ui-content, .ui-mobile-viewport, body{overflow-x: hidden  !important; overflow-y: hidden  !important;}*/
+
+.header{color:#fff;background: #252629;background: -moz-linear-gradient(top,  #252629 0%, #4b4b4d 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#252629), color-stop(100%,#4b4b4d));background: -webkit-linear-gradient(top,  #252629 0%,#4b4b4d 100%);background: -o-linear-gradient(top,  #252629 0%,#4b4b4d 100%);background: -ms-linear-gradient(top,  #252629 0%,#4b4b4d 100%);background: linear-gradient(to bottom,  #252629 0%,#4b4b4d 100%);}
+.ui-header h1.ui-title{color:#fff;font-size: 1.2em;}
+
+.jp-gui {padding:0px; border:none;}
+.jp-gui ul {margin:0 auto; padding:0; width:40px; margin-top:10px;}
+
+.jp-gui ul.playbtn li a.jp-play{display:block;background:#595959 url(images/play.png) no-repeat 7px 3px; width:32px; height:32px; padding:2px; text-indent:-999;}
+.jp-gui ul.playbtn li a.jp-pause{display:block;background:#595959 url(images/play.png) no-repeat -34px 3px; width:32px; height:32px; padding:2px; text-indent:-999;}
+.jp-gui ul li {position:absolute;float:left; list-style:none; margin:0px; padding:0; cursor:pointer;border: 0px solid red !important;border-radius: 0px;overflow: hidden;}
+.jp-gui ul li a {margin:0px;outline:none;}
+.jp-gui ul.playbtn li.jp_play_list{z-index:1;}
+.jp-gui ul.playbtn li.jp_pause_list{z-index:0;}
+
+/* .jp-gui ul.playbtn{ width:40px; margin:4px auto;} */
+.jp-gui li.jp-volume-max{margin-left: 120px;}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{border:0px solid #fff;}
+.jp-volume-slider {position: absolute; top: 12px; left: 85px; width: 100px; height: .4em  !important; margin:0px !important; }
+.ui-corner-all{border-radius: 0px !important;}
+.ui-widget-content{ border: none !important;  padding:0px !important; }
+.ui-slider .ui-slider-handle{width: 0.9em !important; height: 0.9em !important;border: none !important; }
+.jp-gui ul li{ background:none !important;}
+.jp-jplayer{display:none !important;}
+
+.jp-gui ul li.loadgifholder{z-index:3;border:none; }
+.jp-gui ul li.loadgifholder img{background:#222222 !important; text-align:center; width:36px; height:36px; padding:0;border:none;}
+
+/*.fit-content, .bottom-footer {position : absolute;}
+.fit-content {top : 44px; bottom : 44px;left : 0;right : 0;}
+.fit-content > div {height : 100%;}
+.bottom-footer {bottom : 0;	width : 100%;}*/
+
+
+/*.jp-gui.jp-no-volume {width:432px;}
+.jp-gui li.jp-repeat, .jp-gui li.jp-repeat-off {margin-left:344px;}
+.jp-gui li.jp-mute, .jp-gui li.jp-unmute {margin-left:20px;}
+.jp-gui li.jp-volume-max {margin-left:120px;}
+li.jp-pause, li.jp-repeat-off, li.jp-unmute, .jp-no-solution {display:none;}
+.jp-progress-slider {position:absolute; top:28px; left:100px; width:300px;}
+.jp-progress-slider .ui-slider-handle {cursor:pointer;}
+.jp-volume-slider {position:absolute; top:31px;	left:508px; width:100px; height:.4em;}
+.jp-volume-slider .ui-slider-handle {height:.8em; width:.8em; cursor:pointer;}
+.jp-gui.jp-no-volume .jp-volume-slider {display:none;}
+.jp-current-time, .jp-duration {position:absolute; top:42px; font-size:0.8em; cursor:default;}
+.jp-current-time {left:100px;}
+.jp-duration {right:266px;}
+.jp-gui.jp-no-volume .jp-duration {right:70px;}
+.jp-clearboth {clear:both;}*/
+
+
+
+.ui-page{padding:0px !important;}
+ .ui-page-active, .ui-content{overflow: hidden !important;}
