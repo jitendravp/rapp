@@ -13,13 +13,12 @@ background: -ms-linear-gradient(top,  #02a2d9 1%,#22458e 100%);
 background: linear-gradient(to bottom,  #02a2d9 1%,#22458e 100%);
 }*/
 
-.starfm_bg{background-image:url(images/bg_star_fm.jpg);background-repeat:no-repeat; background-position: center center; background-size:100% 100%; height:100%;}
-.alquran_bg{background-image:url(images/bg_alquran_fm.jpg);background-repeat:no-repeat; background-position: center center; background-size:100% 100%; height:100%;
-}
-.abudhabi_bg{background-image:url(images/bg_abudhabi_fm.jpg); background-repeat:no-repeat; background-position: center center; background-size:100% 100%; height:100%;}
-.classic_bg{background-image:url(images/bg_classic_fm.jpg); background-repeat:no-repeat; background-position: center center; background-size:100% 100%; height:100%;}
-.emirate_bg{background-image:url(images/bg_emirate_fm.jpg); background-repeat:no-repeat; background-position: center center; background-size:100% 100%; height:100%;}
-.radiomirchi_bg{background-image:url(images/bg_radio_m_fm.jpg); background-repeat:no-repeat; background-position: center center; background-size:100% 100%; height:100%;}
+.starfm_bg{background-image:url(images/bg_star_fm.jpg);background-repeat:no-repeat; background-position: center center;height:100%;}
+.alquran_bg{background-image:url(images/bg_alquran_fm.jpg);background-repeat:no-repeat; background-position: center center;height:100%;}
+.abudhabi_bg{background-image:url(images/bg_abudhabi_fm.jpg); background-repeat:no-repeat; background-position: center center;height:100%;}
+.classic_bg{background-image:url(images/bg_classic_fm.jpg); background-repeat:no-repeat; background-position: center center;height:100%;}
+.emirate_bg{background-image:url(images/bg_emirate_fm.jpg); background-repeat:no-repeat; background-position: center center;height:100%;}
+.radiomirchi_bg{background-image:url(images/bg_radio_m_fm.jpg); background-repeat:no-repeat; background-position: center center;height:100%;}
 
 .ui-content{background-repeat:no-repeat; background-position: center center; background-size:100% 100%; height:100%; padding:0px !important;}
 /*
@@ -95,4 +94,33 @@ li.jp-pause, li.jp-repeat-off, li.jp-unmute, .jp-no-solution {display:none;}
 
 
 .ui-page{padding:0px !important;}
- .ui-page-active, .ui-content{overflow: hidden !important;}
+.ui-page-active, .ui-content{overflow: hidden !important;}
+.header{top:-1px !important;} 
+
+#grid{max-width:640px;}
+
+.in, .out {
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-duration: 350ms !important;
+}
+
+#errors, #loader{display:none;left: 0;right: 0;width: 100%;position: fixed;bottom:0px;z-index: 1000;background-color: #252629;padding:10px 0px;text-align:center;}
+#errors{z-index: 1001; color:#fff;}
+ 
+@media screen and (max-width: 640px) {
+.starfm_bg{background-size:100% 100%;}
+.alquran_bg{background-size:100% 100%;}
+.abudhabi_bg{background-size:100% 100%;}
+.classic_bg{background-size:100% 100%;}
+.emirate_bg{background-size:100% 100%;}
+.radiomirchi_bg{background-size:100% 100%;}
+}
+
+@media screen and (max-width: 360px) {
+.starfm_bg{background-size:320px 100%;}
+.alquran_bg{background-size:320px 100%;}
+.abudhabi_bg{background-size:320px 100%;}
+.classic_bg{background-size:320px 100%;}
+.emirate_bg{background-size:320px 100%;}
+.radiomirchi_bg{background-size:320px 100%;}
+}

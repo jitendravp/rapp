@@ -1395,6 +1395,7 @@
 			}, false);
 			mediaElement.addEventListener("playing", function() {
 				if(entity.gate) {
+					$("#loader").hide();
 					self._updateButtons(true);
 					self._seeked();
 					self._trigger($.jPlayer.event.playing);
@@ -1408,9 +1409,10 @@
 			}, false);
 			mediaElement.addEventListener("waiting", function() {
 				if(entity.gate) {
+					$("#loader").show();
 					self._seeking();
-					self._trigger($.jPlayer.event.waiting);
-				}
+					self._trigger($.jPlayer.event.waiting); 
+				} 			
 			}, false);
 			mediaElement.addEventListener("seeking", function() {
 				if(entity.gate) {
@@ -1488,6 +1490,11 @@
 						});
 					}
 				}
+				$("#errors").show();
+				setTimeout(function() {
+					$("#errors").hide();
+					window.location.reload();
+				}, 5000);
 			}, false);
 			// Create all the other event listeners that bubble up to a jPlayer event from html, without being used by jPlayer.
 			$.each($.jPlayer.htmlEvent, function(i, eventType) {
